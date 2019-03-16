@@ -1,0 +1,72 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+}
+
+#quote-box {
+  transition: 0.8s;
+  background: white;
+  max-width: 800px;
+  min-width: 60%;
+  padding: 20px 40px;
+  border-radius: 15px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.36);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.36);
+  box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.36);
+  border: solid .5px black;
+}
+
+#text {
+  font-family: 'Playball', cursive;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#author {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 25px;
+}
+
+
+#author::before {
+  content: " -";
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-quote {
+  font-size: 25px;
+  font-family: 'Playball', sans-serif;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #0F3F75;
+  color: white;
+}
+
+#new-quote:hover {
+  background-color: #165BAB;
+}
+
+.fa-twitter-square {
+  font-size: 50px;
+  color: #0F3F75;
+}
+
+@media (max-width: 600px) {
+  #quote-box {
+    width: 80%;
+    top: 35%;
+  }
+
+  #text {
+    font-size: 30px;
+  }
+}
