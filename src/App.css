@@ -64,6 +64,7 @@ body {
   #quote-box {
     width: 80%;
     top: 35%;
+    margin: 10px;
   }
 
   #text {
